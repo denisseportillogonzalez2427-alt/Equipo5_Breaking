@@ -1,0 +1,148 @@
+<!-- ==================================
+   PROYECTO: Breaking - Reparación de Bicicletas
+   Solo HTML y CSS — Sin JavaScript
+=================================== -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breaking - Reparación de Bicicletas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <div class="contenedor-header">
+            <img src="imagenes,/logo.jpeg" alt="Logo Breaking" class="logo-imagen">
+            <h1>✨ Breaking ✨</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#registro" class="menu-registro">Registro</a></li>
+                <li><a href="servicios.html" class="menu-servicios">Servicios</a></li>
+                <li><a href="#contacto" class="menu-contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <!-- SECCIÓN: Presentación -->
+        <section class="seccion presentacion">
+            <img src="imagenes,/bicicleta.jpeg" alt="Bicicleta azul" class="imagen-bici">
+            <div class="texto-presentacion">
+                <h2>Reparación de Bicicletas</h2>
+                <p>En Breaking nos encargamos de reparar y dar mantenimiento a tu bicicleta para que funcione de manera segura. ¡Tu bici está en buenas manos! 🚲💪</p>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: Servicios Destacados -->
+        <section class="seccion">
+            <h2>Nuestros Servicios y Precios</h2>
+            <div class="lista-servicios">
+                <div class="servicio">
+                    <span class="punto amarillo"></span>
+                    <strong>Ajuste de frenos</strong> — $80
+                </div>
+                <div class="servicio">
+                    <span class="punto azul"></span>
+                    <strong>Reparación de llantas</strong> — $150
+                </div>
+                <div class="servicio">
+                    <span class="punto verde"></span>
+                    <strong>Ajuste de cambios</strong> — $100
+                </div>
+                <div class="servicio">
+                    <span class="punto dorado"></span>
+                    <strong>Mantenimiento general</strong> — $250
+                </div>
+            </div>
+            <div class="botones-accion">
+                <a href="servicios.html" class="btn rojo">Ver más...</a>
+                <a href="#agendar" class="btn azul">Agendar reparación</a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: Registro -->
+        <section id="registro" class="seccion">
+            <h2>📝 Registro</h2>
+            <p>Completa tus datos para solicitar una reparación</p>
+            <form class="formulario">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" placeholder="Escribe tu nombre completo">
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" placeholder="Tu número de teléfono">
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" placeholder="tu.correo@ejemplo.com">
+
+                <button type="button" class="btn verde">Registrarse ✅</button>
+            </form>
+        </section>
+
+        <!-- SECCIÓN: Agendar Reparación -->
+        <section id="agendar" class="seccion">
+            <h2>📅 Agendar Reparación</h2>
+            <form class="formulario">
+                <label for="servicio">Selecciona el servicio:</label>
+                <select id="servicio">
+                    <option value="">-- Elige un servicio --</option>
+                    <option>Inflado de llantas — $30</option>
+                    <option>Reparación de pinchadura — $80</option>
+                    <option>Cambio de cámara — $120</option>
+                    <option>Cambio de llanta — $150</option>
+                    <option>Ajuste de frenos — $80</option>
+                    <option>Cambio de zapatas/pastillas — $150</option>
+                    <option>Ajuste de manubrio — $60</option>
+                    <option>Ajuste de asiento — $50</option>
+                    <option>Lubricación de cadena — $50</option>
+                    <option>Cambio de cadenas — $150</option>
+                    <option>Cambio de cables y fundas — $180</option>
+                    <option>Ajuste de cambios — $80</option>
+                    <option>Cambio de desviador — $200</option>
+                    <option>Centrado de ruedas — $120</option>
+                    <option>Cambio de radios — $150</option>
+                    <option>Cambio de casete/pilón — $200</option>
+                    <option>Cambio de plato — $180</option>
+                    <option>Cambio de baleros/rodamientos — $250</option>
+                    <option>Mantenimiento de dirección — $250</option>
+                    <option>Mantenimiento del eje de centro — $300</option>
+                    <option>Mantenimiento de horquilla — $250</option>
+                    <option>Reparación de suspensión — $300</option>
+                    <option>Cambio de transmisión completa — $900</option>
+                    <option>Reparación completa de bicicleta — $1,200</option>
+                </select>
+
+                <label for="fecha">Fecha deseada:</label>
+                <input type="date" id="fecha">
+
+                <label for="descripcion">Descripción del problema:</label>
+                <textarea id="descripcion" rows="4" placeholder="Cuéntanos qué le pasa a tu bicicleta..."></textarea>
+
+                <button type="button" class="btn azul">Solicitar reparación 🚲</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer id="contacto">
+        <h2>📞 Contáctanos</h2>
+        <p class="telefono">Teléfono: 656-657-6357</p>
+        <div class="creditos">
+            <p><strong>Equipo:</strong> Tu número de equipo</p>
+            <p><strong>Integrantes:</strong> Escribe los nombres aquí</p>
+            <p><strong>Grupo:</strong> 5M | <strong>Plantel:</strong> CBTIS 270</p>
+            <p><strong>Docente:</strong> LSC. Mariela Leyva V.</p>
+        </div>
+        <div class="redes-sociales">
+            <a href="#">📘 Facebook</a>
+            <a href="#">📸 Instagram</a>
+            <a href="#">📍 Ubicación</a>
+        </div>
+    </footer>
+
+</body>
+</html>

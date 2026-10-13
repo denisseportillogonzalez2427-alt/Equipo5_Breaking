@@ -1,0 +1,308 @@
+/* ==================================
+   PROYECTO: Breaking - Reparación de Bicicletas
+   Archivo de estilos completo
+=================================== */
+
+/* === RESETEO GENERAL === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF8E1;
+    color: #333;
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* === LOGO DE IMAGEN === */
+.logo-imagen {
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* === ENCABEZADO === */
+header {
+    background: linear-gradient(135deg, #1E88E5, #4CAF50);
+    color: white;
+    padding: 30px 0;
+    margin-bottom: 30px;
+}
+
+.contenedor-header {
+    text-align: center;
+    padding: 15px;
+}
+
+.contenedor-header h1 {
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-size: 16px;
+}
+
+.menu-registro { background-color: #E53935; }
+.menu-servicios { background-color: #FDD835; color: #333; }
+.menu-contacto { background-color: #4CAF50; }
+
+nav ul li a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+/* === CONTENIDO PRINCIPAL === */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px 40px;
+}
+
+.seccion {
+    background-color: #FFFFFF;
+    padding: 35px;
+    margin-bottom: 35px;
+    border-radius: 18px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+}
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.imagen-bici {
+    width: 380px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.texto-presentacion {
+    flex: 1;
+    min-width: 280px;
+}
+
+.texto-presentacion h2 {
+    color: #1E88E5;
+    border-bottom: 3px solid #FDD835;
+    padding-bottom: 10px;
+    font-size: 26px;
+}
+
+.texto-presentacion p {
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.lista-servicios {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.servicio {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+    font-size: 18px;
+    border-bottom: 1px dashed #eee;
+}
+
+.punto {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+}
+.punto.amarillo { background-color: #FDD835; }
+.punto.azul { background-color: #1E88E5; }
+.punto.verde { background-color: #4CAF50; }
+.punto.dorado { background-color: #F59E0B; }
+
+.botones-accion {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 14px 35px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+}
+
+.btn.rojo { background-color: #E53935; color: white; }
+.btn.azul { background-color: #1E88E5; color: white; }
+.btn.verde { background-color: #4CAF50; color: white; }
+
+/* === FORMULARIOS === */
+.formulario {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.formulario label {
+    display: block;
+    margin: 20px 0 8px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #444;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #E0E0E0;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: #FAFAFA;
+}
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+    border-color: #1E88E5;
+    outline: none;
+    background-color: #FFFFFF;
+}
+
+.formulario button {
+    margin-top: 25px;
+    width: 100%;
+}
+
+/* === SERVICIOS.HTML === */
+.categoria-titulo {
+    text-align: left;
+    padding: 12px 18px;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    font-size: 20px;
+    background-color: #F5F5F5;
+}
+
+.fila-servicio {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 18px;
+    border-bottom: 1px solid #F0F0F0;
+    font-size: 16px;
+}
+
+.fila-servicio:hover {
+    background-color: #FFF8E1;
+}
+
+.volver-inicio {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* === PIE DE PÁGINA === */
+footer {
+    background-color: #2D2D2D;
+    color: white;
+    text-align: center;
+    padding: 40px 25px;
+    margin-top: 40px;
+}
+
+footer h2 {
+    color: #FDD835;
+    margin-bottom: 15px;
+}
+
+.telefono {
+    font-size: 22px;
+    margin: 15px 0 25px;
+}
+
+.creditos {
+    margin: 25px 0;
+    font-size: 14px;
+    color: #BBBBBB;
+    line-height: 1.8;
+}
+
+.redes-sociales {
+    margin-top: 20px;
+}
+.redes-sociales a {
+    color: #81C784;
+    text-decoration: none;
+    margin: 0 12px;
+    padding: 8px 12px;
+    font-size: 15px;
+}
+.redes-sociales a:hover {
+    color: #FDD835;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    .presentacion {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagen-bici {
+        width: 100%;
+        max-width: 350px;
+    }
+    main {
+        padding: 10px;
+    }
+    .seccion {
+        padding: 25px;
+    }
+}
